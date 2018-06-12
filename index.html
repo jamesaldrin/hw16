@@ -4,35 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 
     <link rel="stylesheet" href="style.css">
     <title>HW 16</title>
+
+
+    <script src="javascript\clock.js"></script>
+    <script src="javascript\date.js"></script>
+
 </head>
 
 <body>
     <!-- This is the top navigation -->
-    <nav id="navigation">
-        <div>
-            <img class="logo" src="images\logoArtboard 3@2x.png">
-        </div>
-    </nav>
+    <nav>
+        <div class="top-nav">
+            <img class="logo" src="images\logoArtboard 3@2x.png" href="">
 
     <!-- This is the tabbed menu -->
-    <section class="menu">
-        <div>
-            <ul class="menu-items">
-                <li class="items active">Music</li>
-                <li class="items">Designs</li>
-                <li class="items">News</li>
+        <span class="menu">
+            <ul>
+                <li><a href="">Search</a></li>
+                <li><a href="">Feed</a></li>
+                <li><a href="">To-Do</a></li>
+                <li><a href="">Notifications</a></li>
             </ul>
+        </span>
         </div>
-    </section>
+    </nav> 
 
-    <!-- This is where you search -->
-    <div class="search-container">
-        <div class="field-input">
-            <input placeholder="Search biiitch" type="text">
+    <!-- This is the clock -->
+    <section class="clock">
+        <time class="clock__time">
+          <span id="js-clock"></span>
+        </time>
+    </section>
+    
+    <!-- this is the date
+    <section class="box">
+        <div class="date">
+          <div id="day"></div>
+          <div id="daymonth"></div>
+          <div id="year"></div>
         </div>
-    </div>
+    </section> -->
+
+    <div class="searchbar">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
 </body>
 </html>

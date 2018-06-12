@@ -1,22 +1,129 @@
 body {
     margin: 0;
-    background: #f5f5f5;
-    line-height: 2em;
-    font-family: sans-serif;
-    text-transform: uppercase
+    background-color: #202020;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#navigation {
+/* unvisited link */
+a:link {
+    color: #FFF;
+}
+
+/* visited link */
+a:visited {
+    color: #FFF;
+}
+
+/* mouse over link */
+a:hover {
+    color: aqua;
+}
+
+/* selected link */
+a:active {
+    color: aqua;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 60px;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    float:right;
+}
+
+li {
+    float:right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    margin: 0;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-bottom: solid 3px;
+   
+}
+
+.searchbar input[type=text] {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+nav {
     position: relative;
     width: 100%;
-    padding: 20px;
     background-color: rgb(15, 15, 15);
-    margin-bottom: 20px;
 }
 
-.menu {
+.top-nav {
+    height: 63px;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    padding: 4em 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.clock__time {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9vmin;
+    white-space: nowrap;
+    line-height: 1;
+    color: #fff;
+}
+
+.box {
+    background:#FFF;
+    border-radius:5px;
+    display:inline-block;
+    margin:6em 0 2em;
+    padding:10px 20px;
+    width: 500px;
+  }
+
+.date div {
+    display: inline-block;
+    font-size: 2em;
+}
+
+.date #day {
+    color:aqua;
+}
+
+.date #daymonth {
+    color:#454545;
+}
+
+.date #year {
+    color:#C1C1C1;
+}
+
+/* .menu {
     max-width: 800px;
-    margin-top: 100px;
+    margin-top: 15px;
+    padding-right: 60px;
+    margin-right: 100px;
+    float: right;
 }
 
 .menu-items {
@@ -24,14 +131,15 @@ body {
     display: inline-flex;
     margin: 0;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
 }
 
 .items {
-    margin: 10px;
     padding: 0px;
     display: flex;
     padding: 20px;
     color: rgb(131, 131, 131);
     border-bottom: solid 3px;
-}
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px; */
